@@ -3,10 +3,7 @@
 pipeline {
     agent { label 'taskflow-docker' }
 
-    tools {
-        jdk 'jdk17'
-        maven 'maven3'
-    }
+    // The taskflow-docker agent provides Java 17, Maven, Node.js, npm, and Docker CLI.
 
     options {
         timestamps()
